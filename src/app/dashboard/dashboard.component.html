@@ -1,116 +1,123 @@
-<nav>
-  <i style="background-image: url('assets/icons/png/logo.png')"></i>
-
-  <div>
-
-    <ul class="links">
-      <li>
-        <span>Dashboard</span>
-      </li>
-      <li>
-        <span>Task</span>
-      </li>
-      <li>
-        <span>Profiles</span>
-      </li>
-      <li>
-        <span>Proxies</span>
-      </li>
-      <li>
-        <span>Setting</span>
-      </li>
-    </ul>
-
-  </div>
-  <div class="user-info">
-    <h3>Samantha</h3>
-    <span>samantha@gmail.com</span>
-  </div>
-</nav>
-
-<div class="cards">
-  <div>
-    <span>Total spent</span>
-    <h2>$2.315</h2>
-  </div>
-
-  <div>
-    <div>
-
-      <span>Total checkout</span>
-      <select>
-        <option>Day</option>
-      </select>
+<div class="ds-content">
+  <nav>
+    <div class="logo-fire">
+      <img src="assets/icons/png/logo.png">
     </div>
-    <h2>1.233</h2>
-
-  </div>
-
-  <div>
     <div>
-      <span>Total declines</span>
-      <select>
-        <option>Year</option>
-      </select>
+      <ul class="links">
+        <li>
+          <img class="back-img" src="assets/icons/dash.png">
+          <span>Dashboard</span>
+        </li>
+        <li>
+          <img class="back-img" src="assets/icons/back.png">
+          <span>Task</span>
+        </li>
+        <li>
+          <i class="fas fa-user-alt"></i>
+          <span>Profiles</span>
+        </li>
+        <li>
+          <i class="fas fa-globe"></i>
+          <span>Proxies</span>
+        </li>
+        <li>
+          <i class="fas fa-cog"></i>
+          <span>Setting</span>
+        </li>
+      </ul>
     </div>
-    <h2>823</h2>
+    <div class="user-info">
+      <img src="assets/icons/206853.png">
+      <div>
+        <h3>Samantha</h3>
+        <span>samantha@gmail.com</span>
+      </div>
+      <div class="arrow-up">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="ds-content-info">
+    <div class="cards">
+      <div class="cards-item">
+        <div>
+          <span>Total spent</span>
+          <h2>$2.315</h2>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div>
+          <span>Total checkout</span>
+          <h2>1.233</h2>
+        </div>
+        <select>
+          <option>Day</option>
+        </select>
+      </div>
+      <div class="cards-item">
+        <div>
+          <span>Total declines</span>
+          <h2>823</h2>
+        </div>
+        <select>
+          <option>Year</option>
+        </select>
+      </div>
+    </div>
+    <div class="tables">
+      <div class="table-content">
 
+        <!--<button (click)="router.navigate(['/login'])">Login</button>-->
+        <h3>Purchase History</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>N</th>
+              <th>Product Name</th>
+              <th>Date</th>
+              <th>Store</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="style-1">
+            <tr *ngFor="let d of purchaseData">
+              <td>{{d.id}}</td>
+              <td>{{d.name}}</td>
+              <td>{{d.date}}</td>
+              <td>{{d.store}}</td>
+              <td>{{d.price}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="total-amount">
+        <h3>Total amount</h3>
+        <div class="amounts">
+          <div class="amount-item-block">
+            <div class="amount-item">
+              <h2>346</h2>
+              <p>Proxies</p>
+            </div>
+            <div class="amount-item">
+              <h2 class="blue-color">122</h2>
+              <p>Task</p>
+            </div>
+          </div>
+          <div class="amount-item-block">
+            <div class="amount-item">
+              <h2>42</h2>
+              <p>Profile</p>
+            </div>
+            <div class="amount-item">
+              <h2 class="blue-color">98</h2>
+              <p>Px Cookies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="tables">
-
-  <div>
-
-    <!--<button (click)="router.navigate(['/login'])">Login</button>-->
-    <h3>Purchase History</h3>
-
-    <table>
-      <tr>
-        <th>N</th>
-        <th>Product Name</th>
-        <th>Date</th>
-        <th>Store</th>
-        <th>Price</th>
-      </tr>
-
-      <tr *ngFor="let d of purchaseData">
-        <td>{{d.id}}</td>
-        <td>{{d.name}}</td>
-        <td>{{d.date}}</td>
-        <td>{{d.store}}</td>
-        <td>{{d.price}}</td>
-      </tr>
-    </table>
-  </div>
-
-  <div>
-    <h3>Total amount</h3>
-
-    <div class="amounts">
-      <div>
-
-        <div>
-          <h2>346</h2>
-          <p>Proxies</p>
-        </div>
-        <div>
-          <h2>42</h2>
-          <p>Profile</p>
-        </div>
-      </div>
-
-      <div>
-
-        <div>
-          <h2>122</h2>
-          <p>Task</p>
-        </div>
-        <div>
-          <h2>98</h2>
-          <p>Px Cookies</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
