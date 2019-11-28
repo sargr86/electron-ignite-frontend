@@ -1,0 +1,116 @@
+<nav>
+  <i style="background-image: url('assets/icons/png/logo.png')"></i>
+
+  <div>
+
+    <ul class="links">
+      <li>
+        <span>Dashboard</span>
+      </li>
+      <li>
+        <span>Task</span>
+      </li>
+      <li>
+        <span>Profiles</span>
+      </li>
+      <li>
+        <span>Proxies</span>
+      </li>
+      <li>
+        <span>Setting</span>
+      </li>
+    </ul>
+
+  </div>
+  <div class="user-info">
+    <h3>Samantha</h3>
+    <span>samantha@gmail.com</span>
+  </div>
+</nav>
+
+<div class="cards">
+  <div>
+    <span>Total spent</span>
+    <h2>$2.315</h2>
+  </div>
+
+  <div>
+    <div>
+
+      <span>Total checkout</span>
+      <select>
+        <option>Day</option>
+      </select>
+    </div>
+    <h2>1.233</h2>
+
+  </div>
+
+  <div>
+    <div>
+      <span>Total declines</span>
+      <select>
+        <option>Year</option>
+      </select>
+    </div>
+    <h2>823</h2>
+
+  </div>
+</div>
+
+<div class="tables">
+
+  <div>
+
+    <!--<button (click)="router.navigate(['/login'])">Login</button>-->
+    <h3>Purchase History</h3>
+
+    <table>
+      <tr>
+        <th>N</th>
+        <th>Product Name</th>
+        <th>Date</th>
+        <th>Store</th>
+        <th>Price</th>
+      </tr>
+
+      <tr *ngFor="let d of purchaseData">
+        <td>{{d.id}}</td>
+        <td>{{d.name}}</td>
+        <td>{{d.date}}</td>
+        <td>{{d.store}}</td>
+        <td>{{d.price}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <h3>Total amount</h3>
+
+    <div class="amounts">
+      <div>
+
+        <div>
+          <h2>346</h2>
+          <p>Proxies</p>
+        </div>
+        <div>
+          <h2>42</h2>
+          <p>Profile</p>
+        </div>
+      </div>
+
+      <div>
+
+        <div>
+          <h2>122</h2>
+          <p>Task</p>
+        </div>
+        <div>
+          <h2>98</h2>
+          <p>Px Cookies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

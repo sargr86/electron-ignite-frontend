@@ -1,0 +1,65 @@
+.Sign_in_container {
+  width: 30%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  i {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 90px;
+    height: 133px;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: white;
+    padding: 10px 0 30px;
+    margin: 0;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+
+    label {
+      font-size: 16px;
+    }
+
+    input {
+      display: block;
+      height: 44px;
+      width: 100%;
+      color: white;
+      background-color: #41425e;
+      border: none;
+
+      &::placeholder {
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    height: 44px;
+    width: 100%;
+    background: linear-gradient(to right, #781043, #9d2146, #d1384c);
+    color: white;
+  }
+}
+
+label {
+  display: block;
+}
+
+button {
+  display: block;
+  background: linear-gradient(to right, #781043, #9d2146, #d1384c);
+  border: none;
+}
