@@ -18,29 +18,29 @@ function createWindow() {
   ).then(r => r);
 
   // The following is optional and will open the DevTools:
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Building menu from given template
   const mainMenuTemplate = [
-    // {
-    //   label: 'File',
-    //   submenu: [
-    //     {role: 'reload'},
-    //     {type: 'separator'},
-    //     {
-    //       label: 'Exit',
-    //       click() {
-    //         app.quit();
-    //       }
-    //     }
-    //   ]
-    // }
+    {
+      label: 'File',
+      submenu: [
+        {role: 'reload'},
+        {type: 'separator'},
+        {
+          label: 'Exit',
+          click() {
+            app.quit();
+          }
+        }
+      ]
+    }
   ];
 
-  // const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
 
   // Insert menu
-  // Menu.setApplicationMenu(mainMenu);
+  Menu.setApplicationMenu(mainMenu);
 
   // Handles closing the main window
   mainWindow.on("closed", () => {

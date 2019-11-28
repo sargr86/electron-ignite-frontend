@@ -12,8 +12,8 @@
     "e2e": "ng e2e",
     "electron": "ng build --base-href ./ && electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/logo.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar --platform=win32 --arch=ia32 --icon=src/assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Ignite App\"",
-    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar --platform=linux --arch=x64 --icon=src/assets/icons/png/logo.png --prune=true --out=release-builds"
+    "package-win": "electron-packager . ignite-app --overwrite --asar --platform=win32 --arch=ia32 --icon=src/assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Ignite App\"",
+    "package-linux": "electron-packager . ignite-app --overwrite --asar --platform=linux --arch=x64 --icon=src/assets/icons/png/logo.png --prune=true --out=release-builds"
   },
   "private": true,
   "dependencies": {

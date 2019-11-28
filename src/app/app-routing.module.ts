@@ -5,11 +5,11 @@ import {LoginComponent} from './auth/login/login.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'dashboard',
     component: DashboardComponent ,
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   }
 ];
